@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 350 20% 97%;
+    --foreground: 350 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 350 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 350 10% 10%;
+    --primary: 350 85% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 350 20% 94%;
+    --secondary-foreground: 350 85% 40%;
+    --muted: 350 20% 94%;
+    --muted-foreground: 350 10% 40%;
+    --accent: 350 20% 94%;
+    --accent-foreground: 350 85% 40%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 350 20% 90%;
+    --input: 350 20% 90%;
+    --ring: 350 85% 60%;
+    --radius: 0.5rem;
+    --sidebar-background: 350 20% 94%;
+    --sidebar-foreground: 350 10% 10%;
+    --sidebar-primary: 350 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 350 20% 90%;
+    --sidebar-accent-foreground: 350 10% 10%;
+    --sidebar-border: 350 20% 85%;
+    --sidebar-ring: 350 85% 60%;
+    --chart-1: 347 77% 50%;
+    --chart-2: 352 83% 91%;
+    --chart-3: 350 80% 72%;
+    --chart-4: 351 83% 82%;
+    --chart-5: 349 77% 62%;
+  }
+
+  .dark {
+    --background: 350 10% 8%;
+    --foreground: 350 20% 94%;
+    --card: 350 10% 12%;
+    --card-foreground: 350 20% 94%;
+    --popover: 350 10% 12%;
+    --popover-foreground: 350 20% 94%;
+    --primary: 350 85% 70%;
+    --primary-foreground: 350 10% 8%;
+    --secondary: 350 10% 16%;
+    --secondary-foreground: 350 85% 70%;
+    --muted: 350 10% 16%;
+    --muted-foreground: 350 20% 70%;
+    --accent: 350 10% 16%;
+    --accent-foreground: 350 85% 70%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 350 10% 16%;
+    --input: 350 10% 16%;
+    --ring: 350 85% 70%;
+    --sidebar-background: 350 10% 12%;
+    --sidebar-foreground: 350 20% 94%;
+    --sidebar-primary: 350 85% 70%;
+    --sidebar-primary-foreground: 350 10% 8%;
+    --sidebar-accent: 350 10% 16%;
+    --sidebar-accent-foreground: 350 85% 70%;
+    --sidebar-border: 350 10% 20%;
+    --sidebar-ring: 350 85% 70%;
+    --chart-1: 347 77% 50%;
+    --chart-2: 349 77% 62%;
+    --chart-3: 350 80% 72%;
+    --chart-4: 351 83% 82%;
+    --chart-5: 352 83% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Assuming TitleBar title is inside h1 */
+h2 {
+  white-space: pre-line;
+  text-align: center;
+}
