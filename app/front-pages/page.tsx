@@ -81,27 +81,32 @@ export default function FrontPageView() {
 
       {/* ======================================================= */}
 
-      {/* heading of all */}
-      <div className="fixed inset-0 flex items-center justify-center z-10 pointer-events-none">
+      {/* <div className="container mx-auto px-4 flex flex-col items-center z-10"> */}
+
+        {/* Header Image */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-20 p-1 z-30">
         <img
           src={`/subject-images/${selectedSubject.id}-header.png`}
           onError={(e) => {
             e.currentTarget.style.display = "none"
           }}
           alt={`Content for Subject ${selectedSubject.name}`}
-          className="max-w-96 h-auto object-contain pointer-events-none -translate-y-52"
+          className="max-w-fit h-20 object-fill"
         />
       </div>
 
-      {/* image contents */}
-      <img
-        src={`/subject-images/${selectedSubject.id}-content.png`}
-        onError={(e) => {
-          e.currentTarget.style.display = "none"
-        }}
-        alt={`Content for Subject ${selectedSubject.name}`}
-        className="absolute top-48 right-24 max-w-2xl h-auto object-contain z-10 pointer-events-none"
-      />
+        {/* Content Image */}
+        <div className="absolute top-52 right-20 p-3 z-30 h-32">
+        <img
+          src={`/subject-images/${selectedSubject.id}-content.png`}
+          onError={(e) => {
+            e.currentTarget.style.display = "none"
+          }}
+          alt={`Content for Subject ${selectedSubject.name}`}
+          className="w-auto  max-h-52 object-fill"
+        />
+      </div>
+      {/* </div> */}
 
       {/* ===================================================== */}
 
